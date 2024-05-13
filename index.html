@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comment Section</title>
+		<link rel="stylesheet" href="css/app.css" >
+		<link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 375px)" >
+		<!--
+			<link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik" >
+		-->
+		<link rel="icon" href="images/favicon-32x32.png" >
+		<script src="js/app.js" ></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	</head>
+	<body>
+
+		
+		<div class="dark" ></div>
+		
+		<div class="modal" >
+			<h3>Delete comment</h3>
+			
+			<p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
+			
+			<div>
+				<button name="pointer" onclick="cancel ()" >NO, CANCEL</button>
+				<button class="dBtn" name="pointer" onclick="delBox(this)" >YES, DELETE</button>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="comment" id="box1" name="box" >
+			<div class="details" >
+				<img src="images/image-amyrobson.png" >
+				<span class="name" >amyrobson</span>
+				<span>1 month ago</span>
+			</div>
+			
+			<div>
+				<p>
+					<span class="bxText" >Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</span>
+				</p>
+			</div>
+			
+			<div class="foot" >
+				<div class="score" >
+					<img src="images/icon-plus.svg" id="score1" name="pointer" onclick="plus(this)" >
+					<span id="score1" >12</span>
+					<img src="images/icon-minus.svg" id="score1" name="pointer" onclick="minus(this)" >
+				</div>
+				
+				
+				<span class="replyBtn" id="1" name="pointer" onclick="reply(this)" >
+					<img src="images/icon-reply.svg" >
+					Reply
+				</span>
+			</div>
+		</div>
+		
+		
+		<div class="replyBox" id="replyBox1" >
+			<textarea class="replyTextBox" id="1" placeholder="Write a reply..." oninput="replyChk(this)" ></textarea>
+			
+			<img src="images/image-juliusomo.png" >
+			
+			<button id="1" name="pointer" onclick="finishReply(this)" >REPLY</button>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="comment" id="box2" name="box" >
+			<div class="details" >
+				<img src="images/image-maxblagun.png" >
+				<span class="name" >maxblagun</span>
+				<span>2 weeks ago</span>
+			</div>
+			
+			<div>
+				<p>
+					<span class="bxText" >Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</span>
+				</p>
+			</div>
+			
+			<div class="foot" >
+				<div class="score" >
+					<img src="images/icon-plus.svg" id="score2" name="pointer" onclick="plus(this)" >
+					<span id="score2" >12</span>
+					<img src="images/icon-minus.svg" id="score2" name="pointer" onclick="minus(this)" >
+				</div>
+				
+				
+				<span class="replyBtn" id="2" name="pointer" onclick="reply(this)" >
+					<img src="images/icon-reply.svg" >
+					Reply
+				</span>
+			</div>
+		</div>
+		
+		
+		<div class="replyBox" id="replyBox2" >
+			<textarea class="replyTextBox" id="2" placeholder="Write a reply..." oninput="replyChk(this)" ></textarea>
+			
+			<img src="images/image-juliusomo.png" >
+			
+			<button id="2" name="pointer" onclick="finishReply(this)" >REPLY</button>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="reply" id="box3" name="box" >
+			<div class="details" >
+				<img src="images/image-ramsesmiron.png" >
+				<span class="name" >ramsesmiron</span>
+				<span>1 week ago</span>
+			</div>
+			
+			<div>
+				<p>
+					<span class="replyTo" >@maxblagun</span>
+					<span class="bxText" >If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</span>
+				</p>
+			</div>
+			
+			<div class="foot" >
+				<div class="score" >
+					<img src="images/icon-plus.svg" id="score3" name="pointer" onclick="plus(this)" >
+					<span id="score3" >12</span>
+					<img src="images/icon-minus.svg" id="score3" name="pointer" onclick="minus(this)" >
+				</div>
+				
+				
+				<span class="replyBtn" id="3" name="pointer" onclick="reply(this)" >
+					<img src="images/icon-reply.svg" >
+					Reply
+				</span>
+			</div>
+		</div>
+		
+		
+		<div class="replyBox" id="replyBox3" name="initialReplyBox" >
+			<textarea class="replyTextBox" id="3" placeholder="Write a reply..." oninput="replyChk(this)" ></textarea>
+			
+			<img src="images/image-juliusomo.png" >
+			
+			<button id="3" name="pointer" onclick="finishReply(this)" >REPLY</button>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="addComment" >
+			<textarea class="main" placeholder="Add a comment..." ></textarea>
+			
+			<div class="foot" >
+				<img src="images/image-juliusomo.png" >
+				
+				<button class="send" name="pointer" onclick="send(this)" >SEND</button>
+			</div>
+		</div>
+		
+		
+			
+	</body>
+</html>
