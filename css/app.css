@@ -1,0 +1,302 @@
+:root {
+	--moderateBlue: hsl(238, 40%, 52%);
+	--softRed: hsl(358, 79%, 66%);
+	--lightGrayishBlue: hsl(239, 57%, 85%);
+	--paleRed: hsl(357, 100%, 86%);
+	--darkBlue: hsl(212, 24%, 26%);
+	--grayishBlue: hsl(211, 10%, 45%);
+	--lightGray: hsl(223, 19%, 93%);
+	--veryLightGray: hsl(228, 33%, 97%);
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--blackBerry: #65727B;
+}
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "rubik";
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+body {
+	background: var(--veryLightGray);
+	padding: 2rem 4%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+img {
+	display: inline-block;
+	object-fit: contain;
+	object-position: center;
+}
+
+
+button {
+	background: var(--moderateBlue);
+	color: var(--white);
+	padding: .86rem 1.76rem;
+	font-size: 16px;
+	font-weight: 600;
+	border: none;
+	border-radius: 6px;
+}
+
+
+span {
+	font-size: 16px;
+}
+
+
+p {
+	color: var(--grayishBlue);
+	margin: 14px 0 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+}
+
+
+
+
+[name="pointer"] {
+	cursor: pointer;
+}
+
+
+
+div.dark {
+	background: var(--black);
+	height: 100%;		width: 100%;
+	display: none;
+	position: fixed;
+	top: 0;		left: 0;
+	z-index: 1000000000;
+	opacity: .5;
+}
+
+
+div.modal {
+	background: var(--white);
+	padding: 1rem 7%;
+	width: 92%;
+	display: none;
+	position: fixed;
+	top: 10rem;		left: 4%;
+	z-index: 100000000000000;
+	border-radius: 7px;
+}
+
+
+h3 {
+	color: var(--darkBlue);
+}
+
+
+div.modal div {
+	margin: 1rem 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+div.modal button {
+	padding: .86rem 1.36rem;
+}
+
+
+div.modal button:nth-of-type(1) {
+	background: var(--grayishBlue);
+}
+
+
+div.modal button:nth-of-type(2) {
+	background: var(--softRed);
+}
+
+
+
+
+div[name="box"] {
+	background: var(--white);
+	margin: 1rem auto 0;
+	padding: 1rem 5%;
+	width: 100%;
+	border-radius: 7px;
+}
+
+
+div.reply {
+	margin-left: 5%;
+	width: 95%;
+}
+
+
+div.details {
+	display: flex;
+	align-items: center;
+}
+
+
+div.details img {
+	width: 1.8rem;
+}
+
+
+div.details span:nth-of-type(1) {
+	color: var(--darkBlue);
+	margin: 0 1rem;
+	font-weight: 700;
+}
+
+
+div.details span:nth-of-type(2), div.details span:nth-of-type(3) {
+	color: var(--grayishBlue);
+}
+
+
+span.indct {
+	background: var(--moderateBlue);
+	color: var(--white)!important;
+	margin-right: 1rem;
+	padding: 2px 6px;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+
+div[name="box"] div.foot {
+	margin: 1rem 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+div.score {
+	background: var(--veryLightGray);
+	padding: 10px 5px;
+	width: 6rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 6px;
+}
+
+
+div.score span {
+	color: var(--moderateBlue);
+	font-weight: 700;
+}
+
+
+span.replyBtn, span.editBtn, span.delBtn {
+	color: var(--moderateBlue);
+	font-weight: 700;
+}
+
+
+span.delBtn {
+	color: var(--softRed)!important;
+	margin-right: 1rem;
+}
+
+
+span.replyBtn img, span.editBtn img, span.delBtn img {
+	position: relative;
+	top: 1px;		left: -2px;
+}
+
+
+div.edDel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+p span.replyTo {
+	color: var(--moderateBlue);
+	font-weight: 600;
+}
+
+
+
+div.addComment {
+	background: var(--white);
+	margin: 3rem 0 2rem;
+	padding: 1rem 5%;
+	border-radius: 7px;
+	order: 1;
+}
+
+
+textarea {
+	color: var(--grayishBlue);
+	padding: 1rem 5%;
+	height: 6rem;		width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4rem;
+	border: 1.5px solid var(--lightGray);
+	border-radius: 6px;
+}
+
+
+textarea::placeholder {
+	color: var(--grayishBlue);
+	font-size: 15px;
+}
+
+
+
+div.foot {
+	margin: 1rem 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 7px;
+}
+
+
+div.addComment img {
+	width: 2rem;
+}
+
+
+
+
+div.replyBox {
+	background: var(--white);
+	margin: 10px 0 0;
+	padding: 4%;
+	display: none; //flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 7px;
+}
+
+
+div.replyBox img {
+	width: 2rem;
+}
+
+
+div.replyBox textarea{
+	margin: 0 0 1rem;
+	height: 4rem;
+}
+
+
+
+
+

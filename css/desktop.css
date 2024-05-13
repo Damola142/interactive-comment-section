@@ -1,0 +1,60 @@
+body {
+	padding: 3rem 15%;
+}
+
+
+div.modal {
+	padding: 3%;
+	width: 45%;
+	top: 30%;		left: 27.5%;
+}
+
+
+div[name="box"] {
+	padding-left: 5rem;
+	position: relative;
+}
+
+
+div.reply {
+	margin-left: 10%;
+	width: 90%;
+}
+
+div.score {
+	padding: 5px 10px;
+	flex-direction: column;
+	width: auto;		min-height: 5.6rem;
+	position: absolute;
+	top: 1.4rem;		left: 1.2rem;
+}
+
+
+span.replyBtn, div.edDel{
+	position: absolute;
+	top: 1rem;		right: 2rem;
+}
+
+
+div.replyBox {
+	align-items: flex-start;
+}
+
+
+div.replyBox img {
+	width: 2.5rem;
+	order: 1;
+}
+
+
+div.replyBox textarea{
+	margin: 0;
+	padding: 1rem;
+	width: 70%;
+	order: 2;
+}
+
+
+div.replyBox button {
+	order: 3;	
+}
